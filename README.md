@@ -13,13 +13,7 @@
 
 ## 运行
 
-在这台电脑上，可以使用完整路径启动，不受终端当前所在文件夹影响。如果旧服务还在运行，先按 `Ctrl+C` 停止，再执行：
-
-```powershell
-python -m http.server 5173 --bind 127.0.0.1 --directory "C:\Users\张浩楠\Documents\ChatGPT\网页制作\shiguang-kitchen\dist"
-```
-
-在其他电脑上，请将上面的路径替换为实际的 `dist` 文件夹路径；也可以先进入包含 `dist` 的项目根目录，再运行：
+先进入包含 `dist` 的项目根目录，再运行：
 
 ```powershell
 python -m http.server 5173 --bind 127.0.0.1 --directory dist
